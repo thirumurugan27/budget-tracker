@@ -1,0 +1,80 @@
+.box
+{
+    display: flex;
+    height: 100vh;
+}
+
+.left
+{
+    width: 40%;
+    background-color:lightcoral;
+    border-radius: 15px;
+    color: white;
+    justify-content: center;
+    place-items: center;
+}
+
+.income{
+    margin-top: 15px;
+   background-color: white;
+    width: 78%;
+    height: 80%;
+    border-radius: 10px;
+    color: black;
+    /* justify-content: space-between; */
+    
+
+}
+.lboxitems
+{
+    display: block;
+    justify-content: space-between;
+    padding: 10px;
+}
+.right
+{
+    width: 60%;
+    background-color: #F7E7CE;
+    border-radius: 15px;
+
+
+}
+/* .rbox
+{
+    width: 80%;
+    height: 20%;
+     background-color: black; 
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.b1
+{
+    display: inline;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    
+}
+.b2
+{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+
+    
+} */
+ .rbox {
+    align-items: center;
+    width: 80%;
+    height: 25%;
+    background-color:white ;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    color: black;
+
+}
+
