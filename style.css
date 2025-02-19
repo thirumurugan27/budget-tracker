@@ -1,80 +1,129 @@
-.box
-{
+.box {
     display: flex;
     height: 100vh;
 }
 
-.left
-{
+.left {
     width: 40%;
-    background-color:lightcoral;
+    background-color: lightcoral;
     border-radius: 15px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    place-items: center;
 }
 
-.income{
+.income {
     margin-top: 15px;
-   background-color: white;
+    background-color: white;
     width: 78%;
     height: 80%;
     border-radius: 10px;
     color: black;
-    /* justify-content: space-between; */
-    
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.lboxitems
-{
-    display: block;
-    justify-content: space-between;
+
+.lboxitems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
 }
-.right
-{
+
+.right {
     width: 60%;
     background-color: #F7E7CE;
     border-radius: 15px;
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
-/* .rbox
-{
-    width: 80%;
-    height: 20%;
-     background-color: black; 
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-.b1
-{
-    display: inline;
-    width: 50%;
-    height: 100%;
-    background-color: white;
-    
-}
-.b2
-{
-    width: 50%;
-    height: 100%;
-    background-color: white;
 
-    
-} */
- .rbox {
+.rbox {
     align-items: center;
     width: 80%;
-    height: 25%;
-    background-color:white ;
-    margin-right: 10%;
-    margin-left: 10%;
+    background-color: white;
     margin-top: 5%;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
+    border-radius: 15px;
     color: black;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
+.top-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mad {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.mad .n, .mad .m {
+    width: 45%;
+    text-align: center;
+}
+
+.mad .n::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: black;
+}
+
+.mad #n, .mad #m {
+    width: 100%;
+    text-align: center;
+}
+
+.but {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.expense-details {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.expense-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expense-details th, .expense-details td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.expense-details .income-row {
+    color: green;
+}
+
+.expense-details .expense-row {
+    color: red;
+}
